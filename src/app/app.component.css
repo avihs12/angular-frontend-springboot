@@ -1,0 +1,54 @@
+
+
+.logout{
+    height: 40px !important;
+}
+
+.title{
+    margin-left: 30px !important;
+}
+
+.mat-mdc-raised-button.mat-accent {
+    --mdc-protected-button-container-color: #0b0c0e;
+    --mdc-protected-button-label-text-color: #fff;
+}
+.mat-toolbar.mat-primary {
+    background: #bdbdbd;
+    color: rgb(255 255 255 / 87%);
+}
+.mat-mdc-raised-button {
+    box-shadow: none !important;
+}
+.mat-mdc-raised-button:hover {
+    background: rgba(0,0,0,.2);
+}
+.mat-mdc-raised-button:active {
+    background: rgba(0,0,0,.2);
+}
+.mat-mdc-button-touch-target{
+    background: rgba(0,0,0,.2);
+}
+.h6{
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+.dashboard{
+    margin-left: 10px;
+}
+.mat-mdc-raised-button.mat-mdc-button-base{
+    margin-left: 10px;
+    outline: none;
+}
+.mat-ripple{
+    overflow: none !important;
+}
+
+.exit{
+    color: red !important;
+}
+.title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+}

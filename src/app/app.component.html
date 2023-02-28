@@ -1,0 +1,61 @@
+   <mat-toolbar color="primary">
+      <div class="titleul">
+         <h5>Ultimatix</h5>
+      </div>
+      <span class="example-spacer"></span>
+
+      <div *ngIf="isLoggedIn()" class="ms-5 dashboard">
+         <a><button mat-raised-button color="primary" class="dashboard" [color]="color" 
+            (mouseover)="color = 'danger'"  routerLink="dashboard"
+               routerLinkActive="active">Dashboard</button></a>
+      </div>
+
+      <div *ngIf="isLoggedIn()">
+         <a><button  mat-raised-button color="primary"  [color]="color" 
+            (mouseover)="color = 'danger'" routerLink="main"
+               routerLinkActive="active">Details</button></a>
+      </div>
+
+      <div *ngIf="isLoggedIn()">
+         <a><button  mat-raised-button color="primary" [color]="color" 
+            (mouseover)="color = 'danger'"  routerLink="ultimatixhome" 
+            routerLinkActive="active">Home</button></a>
+      </div>
+      
+      <div *ngIf="isLoggedIn()">
+         <a class="title" style="color:white" >Hello {{employeename}} <span class="sr-only">(current)</span></a>
+      </div>
+      
+      <div class="d-flex" align="right">
+         <div title="info">
+            <button mat-icon-button class="bn">
+               <mat-icon>info icon</mat-icon>
+            </button>
+         </div>
+     
+         <div title="mail">
+            <a href = "mailto:ultimatx@tcs.com?subject = Feedback&body = Message"><button mat-icon-button  >
+               <mat-icon> mail_outline</mat-icon>
+            </button> </a>
+         </div>
+
+         <div title="share">
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+               <mat-icon>share</mat-icon>
+            </button>
+         </div>
+
+         <div title="login">
+            <button *ngIf="! isLoggedIn()" type="button" class="nav-link-list" routerLink="/login"  mat-raised-button 
+               color="primary">login
+            </button>
+         </div>
+
+         <div title="logout">
+            <button  class="exit" mat-icon-button class="example-icon" *ngIf="isLoggedIn()"  (click)="LogOut()">      
+               <mat-icon class="exit" color="danger">exit_to_app</mat-icon>
+            </button>
+         </div>
+      </div>
+   </mat-toolbar>
+<router-outlet></router-outlet>

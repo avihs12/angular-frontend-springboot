@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid" menu_>
+        <a class="navbar-brand" href="#">
+            <ul class="nav_text mb-0 d-flex">
+                <li><img src="assets/images/menuB.png" class="menu_sym"></li>
+                <li><span class="menu_text">Menu</span></li>
+                <li><img src="assets/images/ultimatix_logo.png" class="logo_sym"></li>
+            </ul>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Building on belief</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CEO Connect</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Unit News</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav justify-content-space-between ml-auto mb-auto mb-lg-0">
+               <div>
+                <li class="px-4"><a class="nav-right-link" th:href="@{'/showEmployees'}"><img
+                            src="assets/images/worklist.png" class="worklist_sym"></a></li>
+                <li class="px-4"><a class="nav-right-link" href="#"> <img src="assets/images/profile.png"
+                            class="profile_sym"></a></li>
+                <li class="px-4"><a class="nav-right-link" th:href="@{/logout}"><img src="assets/images/signoff.png"
+                            class="signoff_sym"></a></li>
+               </div>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-6">
+        <img src="assets/images/signuppic.png">
+    </div>
+    <div class="col-6">
+        <img class="logo" style="width: auto;height: 60px;margin-top: 100px;margin-left: 175px;"
+            src="assets/images/ultimatix_logo.png">
+
+        <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+
+            <mat-form-field class="example-full-width">
+                <mat-label>username</mat-label>
+                <input matInput ngModel name="username" type="text" id="username" placeholder="Username" required>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+        
+                <mat-label>password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" type="text" ngModel name="password" id="password"
+                  placeholder="password" required>
+        
+                <span mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                  [attr.aria-pressed]="hide">
+                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </span>
+        
+              </mat-form-field>
+
+            <div class="mb-3" style="margin-left: 73px;margin-top:20px;width:363px;">
+                <button mat-raised-button color="primary" class="login-button" type="submit" value="Login">Login</button>
+            </div> 
+            <div class="link" style="margin-left: 183px;">
+                <span> Not registered?
+                    <a routerLink="/registration" routerLinkActive="active"> Register/SignUp Here</a>
+                </span>
+            </div>
+        </form>
+    </div>
+
